@@ -1,0 +1,149 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+h1 { color: #2c3e50; margin-top: 0; }
+        
+.control-panel {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background: #eef2f3;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+button, input[type="file"]::file-selector-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+button:hover { background-color: #2980b9; }
+button.btn-get { background-color: #2ecc71; }
+button.btn-get:hover { background-color: #27ae60; }
+button.btn-delete { background-color: #e61717; }
+
+#paper {
+    background: #fff;
+    border: 2px dashed #bdc3c7;
+    border-radius: 6px;
+    min-height: 300px;
+    padding: 20px;
+}
+.placeholder-text {
+    color: #7f8c8d;
+    font-style: italic;
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+}
+ 
+.input {
+    border-radius:6px
+}
+
+.score-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 320px;
+
+    background: white;
+    box-shadow: -4px 0 15px rgba(0,0,0,0.1);
+    padding: 20px;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+
+
+/*button for library*/
+.drawer-handle {
+    position: fixed;
+    top: 50%;
+    right: 0;
+
+    transform: translateY(-50%);
+
+    background: #3498db;
+    color: white;
+
+    padding: 12px 10px;
+    border-radius: 6px 0 0 6px;
+
+    cursor: pointer;
+    user-select: none;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    box-shadow: -2px 0 10px rgba(0,0,0,0.15);
+
+    z-index: 1100;
+
+    transition: background 0.2s;
+}
+
+.drawer-handle:hover {
+    background: #2980b9;
+}
+
+
+/*library*/
+
+.score-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 320px;
+
+    background: white;
+    box-shadow: -4px 0 15px rgba(0,0,0,0.1);
+    padding: 20px;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.score-drawer.open {
+    transform: translateX(0);
+}
+
+.score-card {
+    background: #eef2f3;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.score-card:hover {
+    background: #dfe6e9;
+}

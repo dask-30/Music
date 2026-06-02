@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Analyzer</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/opensheetmusicdisplay@1.8.7/build/opensheetmusicdisplay.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://unpkg.com/tone@14.7.77/build/Tone.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="play.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Music Viewer & OMR Testing</h1>
+
+        
+
+        <div class="control-panel">
+
+            <div>
+                <label style="font-weight: bold; display: block; margin-bottom: 5px;">
+                    Choose a file (.mxl):
+                </label>
+
+                <input type="file" id="fileInput" accept=".mxl,.xml,.musicxml">
+                <button id="uploadBtn">Upload</button>
+            </div>
+
+            <div style="border-left: 2px solid #ccc; height: 55px; margin: 0 10px;"></div>
+
+            <div style="display:flex; flex-direction:row">
+                <div style="display:flex; flex-direction:column">
+                    <button id="getBtn" class="btn-get">
+                        Get File
+                    </button>
+                    <input type="number" id="idScore" class="input">
+                </div>
+                <button id="deleteBtn" class="btn-delete">
+                    Delete Current Score
+                </button>
+                <button id="playPauseBtn">▶︎</button>
+            </div>
+
+            <div>
+                    
+            </div>
+        </div>
+
+        <h2 id="scoreTitle">No score detected</h2>
+        <h4 id="scoreAuthor"></h4>
+
+        <div id="paper">
+            <span class="placeholder-text" id="placeholder">
+                Click the button to review the score
+            </span>
+        </div>
+    </div>
+    <div id="drawerHandle" class="drawer-handle">
+        ☰
+    </div>
+    <div id="scoreDrawer" class="score-drawer">
+        <h3>My Scores</h3>
+        <div id="scoreList"></div>
+    </div>
+
+</body>
+</html>
