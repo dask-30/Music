@@ -2,6 +2,10 @@
 
 A web application for uploading, storing, visualizing, and playing sheet music.
 
+BRANCH:
+server - the server in spring boot
+site - the working components of the site
+
 The project consists of:
 
 - Spring Boot REST API backend
