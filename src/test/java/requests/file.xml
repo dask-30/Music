@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE score-partwise PUBLIC
+        "-//Recordare//DTD MusicXML 4.0 Partwise//EN"
+        "http://www.musicxml.org/dtds/partwise.dtd">
+<score-partwise version="4.0">
+
+    <work>
+        <work-title>Piesa Test Algoritm</work-title>
+    </work>
+    <movement-title>Subtitlu Exercitiu</movement-title>
+    <creator type="composer">Nume Compozitor</creator>
+
+    <part-list>
+        <score-part id="P1">
+            <part-name>Pian</part-name>
+        </score-part>
+    </part-list>
+
+    <part id="P1">
+
+        <measure number="1">
+            <attributes>
+                <divisions>1</divisions>
+                <key>
+                    <fifths>0</fifths>
+                </key>
+                <time>
+                    <beats>3</beats>
+                    <beat-type>4</beat-type>
+                </time>
+                <clef>
+                    <sign>G</sign>
+                    <line>2</line>
+                </clef>
+            </attributes>
+
+            <note>
+                <pitch>
+                    <step>C</step>
+                    <octave>4</octave>
+                </pitch>
+                <duration>1</duration>
+                <voice>1</voice>
+                <type>quarter</type>
+            </note>
+
+            <note>
+                <pitch>
+                    <step>F</step>
+                    <alter>1</alter>
+                    <octave>4</octave>
+                </pitch>
+                <duration>1</duration>
+                <voice>1</voice>
+                <type>quarter</type>
+                <notations>
+                    <articulations>
+                        <staccato/>
+                    </articulations>
+                </notations>
+            </note>
+
+            <note>
+                <pitch>
+                    <step>A</step>
+                    <octave>4</octave>
+                </pitch>
+                <duration>1</duration>
+                <voice>1</voice>
+                <type>quarter</type>
+                <tie type="start"/>
+                <notations>
+                    <tied type="start"/>
+                </notations>
+            </note>
+        </measure>
+
+        <measure number="2">
+
+
+            <note>
+                <pitch>
+                    <step>A</step>
+                    <octave>4</octave>
+                </pitch>
+                <duration>1</duration>
+                <voice>1</voice>
+                <type>quarter</type>
+                <tie type="stop"/>
+                <notations>
+                    <tied type="stop"/>
+                </notations>
+            </note>
+
+            <note>
+                <rest/>
+                <duration>2</duration>
+                <voice>1</voice>
+                <type>half</type>
+            </note>
+
+        </measure>
+    </part>
+</score-partwise>
